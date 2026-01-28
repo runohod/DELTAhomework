@@ -18,13 +18,15 @@ const DashboardTable = ({ data, onRowClick, activeId }) => {
             onClick={() => onRowClick(row)} 
             className={activeId === row.id ? 'active-row' : ''}
           >
-            <td>{row.title}</td>
+            <td className="title-cell">{row.title}</td>
             <td className="bg-blue-light">{row.current.toLocaleString()}</td>
             <td className={row.percent > 0 ? 'cell-green' : row.percent < 0 ? 'cell-red' : ''}>
-              {row.yesterday.toLocaleString()}
-              <span className={`percent-tag ${row.percent > 0 ? 'tag-green' : row.percent < 0 ? 'tag-red' : 'tag-gray'}`}>
-                {row.percent}%
-              </span>
+              <div className="value-with-badge">
+                {row.yesterday.toLocaleString()}
+                <span className={`percent-tag ${row.percent > 0 ? 'tag-green' : row.percent < 0 ? 'tag-red' : 'tag-gray'}`}>
+                  {row.percent > 0 ? `+${row.percent}%` : `${row.percent}%`}
+                </span>
+              </div>
             </td>
             <td>{row.week.toLocaleString()}</td>
           </tr>

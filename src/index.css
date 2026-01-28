@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  display: block; /* Убираем центрирование Vite */
+  display: block; 
   min-width: 320px;
   min-height: 100vh;
 }

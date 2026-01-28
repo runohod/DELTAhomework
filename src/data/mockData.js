@@ -5,5 +5,6 @@ export const mockData = [
   { id: 4, title: "Кредитные карты", current: 100521, yesterday: 100521, percent: 0, week: 100521, chartData: [100, 105, 95, 110, 100, 105, 100] },
   { id: 5, title: "Средний чек, руб", current: 1300, yesterday: 900, percent: 44, week: 900, chartData: [800, 1100, 950, 1300, 1000, 1200, 1300] },
   { id: 6, title: "Средний гость, руб", current: 1200, yesterday: 800, percent: 50, week: 800, chartData: [700, 900, 850, 1200, 1100, 1000, 1200] },
-  { id: 7, title: "Количество чеков", current: 34, yesterday: 36, percent: -6, week: 34, chartData: [40, 35, 38, 34, 37, 33, 34] }
+  { id: 7, title: "Удаления из чека (после оплаты), руб", current: 1000, yesterday: 1100, percent: -9, week: 900, chartData: [1200, 1100, 1150, 1000, 1050, 1100, 1000] },
+  { id: 8, title: "Количество чеков", current: 34, yesterday: 36, percent: -6, week: 34, chartData: [40, 35, 38, 34, 37, 33, 34] }
 ];
