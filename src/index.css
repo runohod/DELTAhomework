@@ -1,0 +1,12 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #f0f2f5; /* Светло-серый фон как в оригинале */
+  color: #333;
+}
+
+body {
+  margin: 0;
+  display: block; /* Убираем центрирование Vite */
+  min-width: 320px;
+  min-height: 100vh;
+}

@@ -1,0 +1,80 @@
+.app-container {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  max-width: 900px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Шапка графика */
+.chart-header {
+  padding: 20px 20px 0;
+  display: flex;
+  gap: 40px;
+}
+
+.chart-header h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #444;
+}
+
+.current-val {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Таблица */
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dashboard-table th {
+  background: #f9fbfc;
+  color: #888;
+  font-weight: 500;
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.dashboard-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+/* Подсветка при клике */
+.active-row {
+  background-color: #f0f7f4 !important;
+}
+
+/* Цвета колонок */
+.bg-blue-light {
+  background-color: #f5faff;
+}
+
+/* Теги процентов */
+.percent-tag {
+  margin-left: 8px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.tag-green { background: #e6f4ea; color: #1e7e34; }
+.tag-red { background: #fce8e6; color: #d93025; }
+.tag-gray { background: #f1f3f4; color: #5f6368; }
+
+/* Зеленая и красная заливка ячеек */
+.cell-green { background-color: #f0fbf0; }
+.cell-red { background-color: #fff0f0; }
